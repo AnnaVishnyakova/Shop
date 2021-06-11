@@ -1,0 +1,115 @@
+.new_arrivals{
+    background: #F8F3F4;
+}
+.new_arrival__box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 148px;
+}
+.new_arrival__heading{
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+}
+
+.breadcrumbs_link{
+    text-decoration: none;
+     color: #636363;
+}
+.breadcrumbs_text{
+ color: #636363;
+}
+
+.breadcrumbs_text_active{
+    font-weight: bold;
+    color: #F16D7F;
+}
+.main_slider{
+   
+    height: 777px;
+    background: #F7F7F7;
+}
+.main_slider__box{
+     display: flex;
+    justify-content: center;
+}
+
+.detailed_product{
+    
+    height: 602px;
+    margin-top: -50px;
+    margin-bottom: 98px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    background-color: white;
+    outline: 1px solid #EAEAEA;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+     -moz-box-sizing: border-box; /* Для Firefox */  
+    box-sizing: border-box; /* Ширина блока с полями */
+}
+.detailed_product_text{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+}
+.detailed_product__subtitle{
+   
+    color: #F16D7F;
+    padding-bottom: 12px;
+}
+
+.detailed_product_heading{
+    padding-top: 12px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #4D4D4D;
+}
+.detailed_product__text_color{
+    width: 555px;
+    padding-top: 48px;
+    padding-bottom: 32px;
+    text-align: center;
+    color: #5E5E5E;
+}
+.detailed_product__sale{
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #EF5B70;
+    padding-bottom: 64px;
+}
+.detailed_product__outline_1{
+    width: 63px;
+    outline: 3px solid #EF5B70;
+}
+.detailed_product__outline_2{
+        width: 642px;
+    outline: 1px solid #EAEAEA;
+}
+.detailed_product_choose{
+display: flex;
+justify-content: center;
+padding-top: 64px;
+
+}
+
+.detailed_product__choose_text{
+    padding-left: 23px;
+    color:#6F6E6E;
+}
+
+
+.sale_pink{
+    width: 26px;
+    height: 24px;
+    padding-right: 23px;
+}
+
+main{
+    margin-bottom: 128px;
+}
