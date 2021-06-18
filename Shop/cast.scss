@@ -1,0 +1,36 @@
+@import "module/mixin";
+
+
+.new_arrivals{
+    background: #F8F3F4;
+}
+.new_arrival__box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 148px;
+}
+.new_arrival__heading{
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+}
+
+.card{
+    &__main-box{
+        width: 652px;
+        height: 306px;
+        outline: 1px solid #EAEAEA;
+       box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+       margin-bottom: 40px;
+    }
+    // &__main-box:not(:last-child){
+    //     margin-bottom: 40px;
+    &__main-btn{
+        margin-top: 72px;
+    }
+    @include card_center
+}
+
+
+
