@@ -1,4 +1,48 @@
+@mixin card-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //justify-content: center;
+}
+
 @mixin card_center {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
 }
+@mixin size_h2 {
+    font-size: 24px;
+    line-height: 29px;
+}
+@mixin main-text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    
+}
+@mixin card-button {
+     display: flex;
+    justify-content:center;
+    text-decoration: none;
+    text-align: center;
+    
+}
+@mixin formhead {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    
+}
+
+@mixin form-text {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+}
+// @mixin form-heading {
+//     font-weight: 300;
+//     font-size: 16px;
+//     line-height: 19px;
+//     color: #222222;   
+// }

@@ -45,17 +45,50 @@
         <section class="cart container">
             <div class="card">
                 <div class="card__main">
-                    <div class="card__main-box"></div>
-                    <div class="card__main-box"></div> 
+                    <article class="card__main-box">
+                        <div class="card__img">
+                            <img src="img/product_img3.jpg" alt="product1">
+                        </div>
+                        <div class="card__info">
+                            <h2>MANGO PEOPLE T-SHIRT</h2>
+                            <div class="card__main-text">
+                                <p>Price: <span class="card__main-text.pink">$300</span></p>
+                                <p>Color: <span>Red</span></p>
+                                <p>Size: <span>Xl</span></p>
+                                <p>Quantity:
+                                <input type="text" id="text" name="text" value="1" />
+                                </p>
+                            </div>
+                            
+                        </div>
+                        <div class="cl-btn-7"></div>
+                    </article>
+                    <article class="card__main-box"></article> 
                     <div class="card__main-btn">
-                        <button class="main-btn"></button>
-                        <button class="main-btn"></button>
+                       <a href="#"><span>CLEAR SHOPPING CART</span></a>
+                        <a href="#"><span>CONTINUE SHOPPING</span></a>
                     </div>
                 </div>
                 <div class="card__form">
-                    <form>
-
+                    <p class="card__form-heading">SHIPPING ADRESS</p>
+                    <form class="card__form-main" action="" method="post" name="contact_form">
+                        <input type="text" id="Country" placeholder="Country"/>
+                        <input type="text" id="State" placeholder="State" />
+                        <input type="text" id="Postcode" placeholder="Postcode" />
+                    <div class="card__form-btn"> <a href="#"><span>GET A QUOTE</span></a></div>
                     </form>
+                    <div class="card__grand-total">
+                        <div class="card__grand-info">
+                            <p class="card__grand-text">SUB TOTAL<span class="card__full-cost" id="sub-total">$900</span></p>
+                            <p class="card__grand-heading" >SHIPPING ADRESS
+                                <span class="card__full-cost card__full-cost--pink" id="grand-total">$900</span>
+                            </p>
+                        </div>
+                        <div class="card__grand-outline">
+
+                        </div>
+                        <div class="card__grand-btn"> <a href="#"><span>PROCEED TO CHECKOUT</span></a></div>
+                    </div>
                 </div>
             </div>
         </section>
