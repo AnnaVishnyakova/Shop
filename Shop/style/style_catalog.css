@@ -40,9 +40,91 @@ color: #636363;
 margin-bottom: 34px;
 }
 .products_filter_right{
-    padding-left: 370px;
+    padding-left: 30px;
 
 }
+
+.filter {
+   width: 360px;
+  background-color:white;
+  box-sizing: border-box;
+  position: relative;
+  outline: none;
+  border: none;
+}
+.filter-text{
+    font-weight: 600;
+  
+    padding-left: 16px;
+
+}
+/* Убираем стандартный маркер Chrome */
+details summary::-webkit-details-marker {
+  display: none
+}
+/* Убираем стандартный маркер Firefox */
+details > summary {
+  list-style: none;
+}
+
+
+.filter[open] {
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  
+}
+.filter[open]>summary{
+  color: #F16D7F;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  list-style: none;
+}
+
+.filter-title{
+     /* padding: 11px 0px 11px 10px; */
+    outline: none;
+}
+.fiter-content {
+    z-index: 10 ;
+  position: absolute;
+  background-color:white;
+  width: 360px;
+  left: 0;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+ 
+}
+.filter-category{
+    padding: 11px 0px 11px 10px;
+    outline: none;
+    border-left: 4px solid #F16D7F;
+    border-bottom: 1px solid #EBEBEB;
+     color: #F16D7F;
+    list-style: none;
+}
+.filter-title{
+    padding-left: 17px;
+     padding-bottom: 16px;
+     box-sizing: border-box;
+}
+
+.filter-list{
+    padding: 13px 0 8px 14px;
+    list-style: none;
+  
+
+} 
+.filter-item{
+    padding-top: 11px;
+}
+.filter-link{
+color: #6F6E6E;
+text-decoration: none;
+
+}
+
+
+
+
 
 .pagination{ 
     padding-top: 48px;
@@ -70,27 +152,28 @@ margin-bottom: 34px;
 
     color: #C4C4C4;
 }
+.trending{
+    margin-left: 30px;
+    background-color:white;
+  box-sizing: border-box;
+  position: relative;
+  outline: none;
+  border: none;
+}
+.trending-content{
+    z-index: 10 ;
+  position: absolute;
+  background-color:white;
+  width: 80px;
+  left: 0;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+.trending-text{
+    color: #6F6E6E;
+}
+.custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
 
-
-
-
-.filters-svg {
-        fill: #000000;
-    }
-
-    .details-without-marker > summary {
-        list-style: none;
-    }
-    .details-without-marker > summary::marker {
-        display: none;
-    }
-    
-    .catalog-filters-details > summary > span {
-        color: #000000;
-    }
-    .catalog-filters-details[open] > summary > span {
-        color: #F16D7F;
-    }
-    .catalog-filters-details[open] > summary > svg {
-        fill: #F16D7F !important;
-    }

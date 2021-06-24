@@ -1,0 +1,206 @@
+@import "module/mixin";
+@import "var/var";
+
+
+.new_arrivals{
+    background: #F8F3F4;
+}
+.new_arrival__box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 148px;
+}
+.new_arrival__heading{
+    font-size: 24px;
+    line-height: 29px;
+    color: $maincolorpink;
+}
+
+.card{
+    margin-top: 118px;
+    margin-bottom: 128px;
+    &__main-box{
+        position: relative;
+        box-sizing: border-box;
+        display: flex;
+        width: 652px;
+        height: 306px;
+        outline: 1px solid #EAEAEA;
+        box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+        margin-bottom: 40px;
+        & img {
+         width: 262px;
+        }
+        
+    }
+    &__info{
+        
+        width: 262px;
+        padding-left: 31px;
+        padding-top: 22px;
+        & h2{
+            color:$maincolor;
+            font-weight: normal;
+            @include  size_h2
+        }
+    }  
+    &__main-text{
+        padding-top: 42px;
+        & p {
+            font-size: 22px;
+            line-height: 26px;
+            color: #575757;
+        }
+        
+        & span {
+            color:#6F6E6E;
+        }
+        &.pink {
+            color:$maincolorpink;
+        }
+
+        & input{
+          
+                width: 44px;
+                height: 25px;
+                font-size: 13px;
+                margin-left: 24px;
+                border: 1px solid #EAEAEA;
+                text-align: center;
+                font-size: 18px;
+                line-height: 22px;
+                color: #656565;
+            
+        }
+    } 
+    &__main-btn{
+        width: 652px;
+        margin-top: 72px;
+        display: flex;
+        justify-content: space-between;
+        & a{
+            width: 235px;
+            height: 50px;
+            outline: $mainline;  
+            @include card-button;
+            & span{
+                
+                align-self:center;
+                @include main-text;
+                color: #000000;;
+            }
+        }
+    }
+
+    &__form{
+        box-sizing:border-box;
+        width: 360px;
+        
+    }
+    &__form-heading{
+        padding-top: 17px;
+        color: $maincolor;
+        @include formhead
+    } 
+    &__form-main{
+        
+        & input[type=text] {
+            box-sizing:border-box;
+            width: 360px;
+            height: 45px;
+            border: none;
+            outline: $mainline;
+            margin-top:20px;
+            padding:0 17px;
+            
+            @include form-text
+        }
+    }
+    &__form-btn{
+        margin-top: 20px;
+        & a{
+            width: 102px;
+            height: 35px;
+            
+            outline: $mainline;  
+            @include card-button;
+            & span{
+                align-self:center;
+                font-weight: 300;
+                font-size: 11px;
+                line-height: 13px;
+                color: #4A4A4A;
+            }
+        }
+    }
+    &__grand-total{
+        @include card-column;
+         box-sizing:border-box;
+        width: 100%;
+        margin-top: 57px;
+        // height: 214px;
+        background: #F5F3F3;
+        text-align: end;
+        padding-top: 39px;
+        // padding-right: 42px;
+        
+
+    }
+    &__grand-info{
+        width: 275px;
+        padding-bottom: 21px;
+    }
+    &__grand-heading{
+        padding-top: 12px;
+         color: $maincolor;
+        @include formhead
+    }
+    &__grand-text{
+        font-size: 11px;
+        line-height: 13px;
+        color: #4A4A4A;
+    }
+    &__full-cost{
+        padding-left: 15px;
+    }
+    &__full-cost--pink{
+        color: $maincolorpink;
+    }
+    &__grand-outline{
+        width: 275px;
+        margin-bottom: 17px;
+        outline: 1px solid #E2E2E2;
+    }
+    &__grand-btn{
+        margin-bottom: 42px;
+       & a{
+           width: 275px;
+        height: 50px;
+        background-color: $maincolorpink;
+        @include card-button;
+        & span{
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            align-self:center;
+            color: #FFFFFF;
+        }
+        
+       }
+        
+    }
+    @include card_center
+
+    
+}
+
+
+
+
+
+// Стилизация placeholder форме
+::-webkit-input-placeholder {color:#222222;}
+::-moz-placeholder          {color:#222222;opacity: 1;}/* Firefox 19+ */
+:-moz-placeholder           {color:#222222;opacity: 1;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#222222;opacity: 1;}
