@@ -1,0 +1,153 @@
+@import "module/mixin";
+@import "var/var";
+
+
+.new_arrivals{
+    background: #F8F3F4;
+}
+.new_arrival__box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 148px;
+}
+.new_arrival__heading{
+    font-size: 24px;
+    line-height: 29px;
+    color: $maincolorpink;
+}
+
+.registrations{
+    margin-top: 64px;
+    margin-bottom: 96px;
+    &__form{
+        box-sizing:border-box;
+        width: 360px;
+        
+    }
+        
+    &__form-main{
+        & p{
+            @include form-text;
+        }
+        
+        & input[type=text] {
+            box-sizing:border-box;
+            width: 360px;
+            height: 45px;
+            border: none;
+            outline: $mainline;
+            margin-top:20px;
+            padding:0 17px;
+            
+            @include input-text
+            
+        }
+        &-text-mini{
+        @include form-text-mini;
+        color: #B1B1B1;
+    }
+    }
+
+    &__form-radio{
+        margin-top: 31px;
+        margin-left: 0;
+    }
+    & label{
+            padding-left: 10px;
+             @include form-text-mini;
+    }
+
+    
+
+
+
+
+
+    // &__form-btn{
+    //     margin-top: 20px;
+    //     & a{
+    //         width: 102px;
+    //         height: 35px;
+            
+    //         outline: $mainline;  
+    //         @include card-button;
+    //         & span{
+    //             align-self:center;
+    //             font-weight: 300;
+    //             font-size: 11px;
+    //             line-height: 13px;
+    //             color: #4A4A4A;
+    //         }
+    //     }
+    // }
+    // &__grand-total{
+    //     @include card-column;
+    //      box-sizing:border-box;
+    //     width: 100%;
+    //     margin-top: 57px;
+    //     // height: 214px;
+    //     background: #F5F3F3;
+    //     text-align: end;
+    //     padding-top: 39px;
+    //     // padding-right: 42px;
+        
+
+    // }
+    // &__grand-info{
+    //     width: 275px;
+    //     padding-bottom: 21px;
+    // }
+    // &__grand-heading{
+    //     padding-top: 12px;
+    //      color: $maincolor;
+    //     @include formhead
+    // }
+    // &__grand-text{
+    //     font-size: 11px;
+    //     line-height: 13px;
+    //     color: #4A4A4A;
+    // }
+    // &__full-cost{
+    //     padding-left: 15px;
+    // }
+    // &__full-cost--pink{
+    //     color: $maincolorpink;
+    // }
+    // &__grand-outline{
+    //     width: 275px;
+    //     margin-bottom: 17px;
+    //     outline: 1px solid #E2E2E2;
+    // }
+    // &__grand-btn{
+    //     margin-bottom: 42px;
+    //    & a{
+    //        width: 275px;
+    //     height: 50px;
+    //     background-color: $maincolorpink;
+    //     @include card-button;
+    //     & span{
+    //         font-weight: 300;
+    //         font-size: 16px;
+    //         line-height: 19px;
+    //         align-self:center;
+    //         color: #FFFFFF;
+    //     }
+        
+    //    }
+        
+    // }
+    @include card_center
+
+    
+}
+
+
+
+
+
+// Стилизация placeholder форме
+::-webkit-input-placeholder {color:#B1B1B1;}
+::-moz-placeholder          {color: #B1B1B1;opacity: 1;}/* Firefox 19+ */
+:-moz-placeholder           {color: #B1B1B1;opacity: 1;}/* Firefox 18- */
+:-ms-input-placeholder      {color: #B1B1B1;opacity: 1;}
