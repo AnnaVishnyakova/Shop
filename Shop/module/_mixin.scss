@@ -4,7 +4,10 @@
     align-items: center;
     //justify-content: center;
 }
-
+@mixin registration {
+    display: flex;
+    justify-content: space-between;
+}
 @mixin card_center {
     display: flex;
     justify-content: space-between;

@@ -3,7 +3,8 @@ margin: 0;
 padding: 0;
 }
 .body{
-  font-family: Lato,sans-serif;
+   font-family: Lato; 
+    src: url(lato/latobold.ttf); /* Путь к файлу со шрифтом */
 }
 .header{
   background: #222222;
