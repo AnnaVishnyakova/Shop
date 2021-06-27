@@ -1,0 +1,145 @@
+@import "module/mixin";
+@import "var/var";
+
+
+.new_arrivals{
+    background: #F8F3F4;
+}
+.new_arrival__box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 148px;
+}
+.new_arrival__heading{
+    font-size: 24px;
+    line-height: 29px;
+    color: $maincolorpink;
+}
+
+.registrations{
+    margin-top: 64px;
+    margin-bottom: 96px;
+    &__form{
+        height: 100%;
+    //     display: flex;
+    // justify-content: space-between;
+        @include registration;
+        box-sizing:border-box;
+        // width: 360px;
+        
+    }
+        
+    &__form-main{
+         width: 360px;
+        & p{
+            @include form-text;
+        }
+        
+        & input[type=text] {
+            box-sizing:border-box;
+            width: 360px;
+            height: 45px;
+            border: none;
+            outline: $mainline;
+            margin-top:20px;
+            padding:0 17px;
+            
+            @include input-text
+            
+        }
+        &-text-mini{
+            padding-top: 15px;
+            @include form-text-mini;
+            & p{color: #B1B1B1;}
+
+            //анимация плавная смеа цвета
+            & p:hover{ 
+                color: #492323;
+                transition: color 5s;}
+        }
+    }
+
+    &__form-radio{
+        margin-top: 31px;
+        margin-left: 0;
+    }
+    & label{
+            padding-left: 10px;
+             @include form-text-mini;
+    }
+    &__btn-link{
+        width: 167px;
+        height: 50px;
+        margin-top: 40px;
+        @include card-button;
+        justify-content: flex-start;
+        background-color: $maincolorpink;
+        & p {
+            align-self:center;
+            width: 100%;
+            color: white;
+            text-align: center;
+        }
+
+        //анимация: увеличение кноки в 2 раза
+        transition: all 10s;
+    }
+
+     &__btn-link:hover{
+         transform: scale(1.75);
+     }
+
+
+    &__info{
+        width: 652px;
+        
+    
+    }
+    &__info-heading{
+        margin-bottom: 20px;
+        // font-style: normal;
+        color: #000000;
+        @include size_h2;
+        transition: all 5s;
+        
+    }
+    //анимация  вращение текста 360 градусов
+    &__info-heading:hover{
+        transform: rotate(360deg);
+    }
+
+    & ul {
+        list-style: none;
+        & li{
+            padding-bottom: 16px;
+           
+        }
+        
+        
+    }
+    
+    & ul li:before {
+        content: '✓';
+        padding-right: 20px;
+       
+    }
+
+    
+
+
+
+    // @include card_center
+
+    
+}
+
+
+
+
+
+// Стилизация placeholder форме
+::-webkit-input-placeholder {color:#B1B1B1;}
+::-moz-placeholder          {color: #B1B1B1;opacity: 1;}/* Firefox 19+ */
+:-moz-placeholder           {color: #B1B1B1;opacity: 1;}/* Firefox 18- */
+:-ms-input-placeholder      {color: #B1B1B1;opacity: 1;}

@@ -4,7 +4,10 @@
     align-items: center;
     //justify-content: center;
 }
-
+@mixin registration {
+    display: flex;
+    justify-content: space-between;
+}
 @mixin card_center {
     display: flex;
     justify-content: space-between;
@@ -33,12 +36,23 @@
     line-height: 19px;
     
 }
-
-@mixin form-text {
+@mixin form-text{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+}
+@mixin input-text {
     font-weight: 300;
     font-size: 13px;
     line-height: 16px;
-    color: #B1B1B1;
+    color: #222222;
+}
+
+@mixin form-text-mini{
+    font-weight: 300;
+font-size: 11px;
+line-height: 13px;
 }
 // @mixin form-heading {
 //     font-weight: 300;
